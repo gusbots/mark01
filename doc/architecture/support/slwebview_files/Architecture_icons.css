@@ -1,0 +1,11 @@
+.Architecture0,
+.Architecture1,
+.Architecture2,
+.Architecture3,
+.Architecture4 { background-image: url('Architecture_icons.png'); width: 16px; height: 16px; }
+
+.Architecture0 { background-position: -0px; }
+.Architecture1 { background-position: -16px; }
+.Architecture2 { background-position: -32px; }
+.Architecture3 { background-position: -48px; }
+.Architecture4 { background-position: -64px; }

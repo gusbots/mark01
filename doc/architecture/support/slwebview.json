@@ -1,0 +1,31 @@
+{
+ "baseUrl":"support/slwebview_files",
+ "homeHid":1,
+ "initialElement":"",
+ "sections":[
+  {
+   "hid":1,
+   "sid":"Architecture",
+   "name":"Architecture",
+   "fullname":"Architecture",
+   "label":"Architecture",
+   "parent":0,
+   "descendants":[
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "hierarchyUrl":"support/slwebview_files/Architecture_h_1.json",
+   "backingUrl":"support/slwebview_files/Architecture_m.json"
+  }
+ ],
+ "optViews":[
+ ],
+ "display":{
+  "informer":false
+ },
+ "iconsUrl":"support/slwebview_files/Architecture_icons.css"
+}
