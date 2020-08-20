@@ -1,7 +1,7 @@
 [
  {
   "hid":1,
-  "sid":"Architecture",
+  "sid":"architecture",
   "esid":"",
   "parent":0,
   "children":[
@@ -10,15 +10,15 @@
    4,
    5,
    6,
-   7
+   10
   ],
-  "name":"Architecture",
-  "fullname":"Architecture",
-  "label":"Architecture",
-  "icon":"Architecture0",
-  "svg":"support/slwebview_files/Architecture_d.svg",
-  "thumbnail":"support/slwebview_files/Architecture_d.png",
-  "backingUrl":"support/slwebview_files/Architecture_d.json",
+  "name":"architecture",
+  "fullname":"architecture",
+  "label":"architecture",
+  "icon":"architecture0",
+  "svg":"support/slwebview_files/architecture_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_d.png",
+  "backingUrl":"support/slwebview_files/architecture_d.json",
   "elements":[
    ":14",
    ":13",
@@ -41,18 +41,18 @@
  },
  {
   "hid":2,
-  "sid":"Architecture:7",
-  "esid":"Architecture:7",
+  "sid":"architecture:7",
+  "esid":"architecture:7",
   "parent":1,
   "children":[
   ],
   "name":"AA Batteries",
-  "fullname":"Architecture/AA Batteries",
+  "fullname":"architecture/AA Batteries",
   "label":"AA Batteries",
-  "icon":"Architecture2",
-  "svg":"support/slwebview_files/Architecture_7_d.svg",
-  "thumbnail":"support/slwebview_files/Architecture_7_d.png",
-  "backingUrl":"support/slwebview_files/Architecture_7_d.json",
+  "icon":"architecture2",
+  "svg":"support/slwebview_files/architecture_7_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_7_d.png",
+  "backingUrl":"support/slwebview_files/architecture_7_d.json",
   "elements":[
    ":9",
    ":10"
@@ -61,18 +61,18 @@
  },
  {
   "hid":3,
-  "sid":"Architecture:4",
-  "esid":"Architecture:4",
+  "sid":"architecture:4",
+  "esid":"architecture:4",
   "parent":1,
   "children":[
   ],
   "name":"AdaFruit DC Motor HAT",
-  "fullname":"Architecture/AdaFruit DC Motor HAT",
+  "fullname":"architecture/AdaFruit DC Motor HAT",
   "label":"AdaFruit DC Motor HAT",
-  "icon":"Architecture2",
-  "svg":"support/slwebview_files/Architecture_4_d.svg",
-  "thumbnail":"support/slwebview_files/Architecture_4_d.png",
-  "backingUrl":"support/slwebview_files/Architecture_4_d.json",
+  "icon":"architecture2",
+  "svg":"support/slwebview_files/architecture_4_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_4_d.png",
+  "backingUrl":"support/slwebview_files/architecture_4_d.json",
   "elements":[
    ":5",
    ":11",
@@ -90,18 +90,18 @@
  },
  {
   "hid":4,
-  "sid":"Architecture:36",
-  "esid":"Architecture:36",
+  "sid":"architecture:36",
+  "esid":"architecture:36",
   "parent":1,
   "children":[
   ],
   "name":"Battery_5V",
-  "fullname":"Architecture/Battery_5V",
+  "fullname":"architecture/Battery_5V",
   "label":"Battery_5V",
-  "icon":"Architecture2",
-  "svg":"support/slwebview_files/Architecture_36_d.svg",
-  "thumbnail":"support/slwebview_files/Architecture_36_d.png",
-  "backingUrl":"support/slwebview_files/Architecture_36_d.json",
+  "icon":"architecture2",
+  "svg":"support/slwebview_files/architecture_36_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_36_d.png",
+  "backingUrl":"support/slwebview_files/architecture_36_d.json",
   "elements":[
    ":38"
   ],
@@ -109,18 +109,18 @@
  },
  {
   "hid":5,
-  "sid":"Architecture:26",
-  "esid":"Architecture:26",
+  "sid":"architecture:26",
+  "esid":"architecture:26",
   "parent":1,
   "children":[
   ],
   "name":"LeftDCMotor",
-  "fullname":"Architecture/LeftDCMotor",
+  "fullname":"architecture/LeftDCMotor",
   "label":"LeftDCMotor",
-  "icon":"Architecture2",
-  "svg":"support/slwebview_files/Architecture_26_d.svg",
-  "thumbnail":"support/slwebview_files/Architecture_26_d.png",
-  "backingUrl":"support/slwebview_files/Architecture_26_d.json",
+  "icon":"architecture2",
+  "svg":"support/slwebview_files/architecture_26_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_26_d.png",
+  "backingUrl":"support/slwebview_files/architecture_26_d.json",
   "elements":[
    ":28",
    ":29"
@@ -129,38 +129,109 @@
  },
  {
   "hid":6,
-  "sid":"Architecture:1",
-  "esid":"Architecture:1",
+  "sid":"architecture:1",
+  "esid":"architecture:1",
   "parent":1,
   "children":[
+   7,
+   8,
+   9
   ],
   "name":"Raspberry PI",
-  "fullname":"Architecture/Raspberry PI",
+  "fullname":"architecture/Raspberry PI",
   "label":"Raspberry PI",
-  "icon":"Architecture2",
-  "svg":"support/slwebview_files/Architecture_1_d.svg",
-  "thumbnail":"support/slwebview_files/Architecture_1_d.png",
-  "backingUrl":"support/slwebview_files/Architecture_1_d.json",
+  "icon":"architecture2",
+  "svg":"support/slwebview_files/architecture_1_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_1_d.png",
+  "backingUrl":"support/slwebview_files/architecture_1_d.json",
   "elements":[
    ":3",
-   ":2"
+   ":2",
+   ":39",
+   ":42",
+   ":45",
+   ":42#out:1",
+   ":39#out:1",
+   ":39#out:2",
+   ":45#out:1"
   ],
   "sameAsElement":true
  },
  {
   "hid":7,
-  "sid":"Architecture:33",
-  "esid":"Architecture:33",
+  "sid":"architecture:42",
+  "esid":"architecture:42",
+  "parent":6,
+  "children":[
+  ],
+  "name":"adafruit_motorkit",
+  "fullname":"architecture/Raspberry PI/adafruit_motorkit",
+  "label":"adafruit_motorkit",
+  "icon":"architecture2",
+  "svg":"support/slwebview_files/architecture_42_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_42_d.png",
+  "backingUrl":"support/slwebview_files/architecture_42_d.json",
+  "elements":[
+   ":44",
+   ":43",
+   ":49"
+  ],
+  "sameAsElement":true
+ },
+ {
+  "hid":8,
+  "sid":"architecture:39",
+  "esid":"architecture:39",
+  "parent":6,
+  "children":[
+  ],
+  "name":"mark01.py",
+  "fullname":"architecture/Raspberry PI/mark01.py",
+  "label":"mark01.py",
+  "icon":"architecture2",
+  "svg":"support/slwebview_files/architecture_39_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_39_d.png",
+  "backingUrl":"support/slwebview_files/architecture_39_d.json",
+  "elements":[
+   ":41",
+   ":40",
+   ":48"
+  ],
+  "sameAsElement":true
+ },
+ {
+  "hid":9,
+  "sid":"architecture:45",
+  "esid":"architecture:45",
+  "parent":6,
+  "children":[
+  ],
+  "name":"pygame",
+  "fullname":"architecture/Raspberry PI/pygame",
+  "label":"pygame",
+  "icon":"architecture2",
+  "svg":"support/slwebview_files/architecture_45_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_45_d.png",
+  "backingUrl":"support/slwebview_files/architecture_45_d.json",
+  "elements":[
+   ":47"
+  ],
+  "sameAsElement":true
+ },
+ {
+  "hid":10,
+  "sid":"architecture:33",
+  "esid":"architecture:33",
   "parent":1,
   "children":[
   ],
   "name":"RightDCMotor",
-  "fullname":"Architecture/RightDCMotor",
+  "fullname":"architecture/RightDCMotor",
   "label":"RightDCMotor",
-  "icon":"Architecture2",
-  "svg":"support/slwebview_files/Architecture_33_d.svg",
-  "thumbnail":"support/slwebview_files/Architecture_33_d.png",
-  "backingUrl":"support/slwebview_files/Architecture_33_d.json",
+  "icon":"architecture2",
+  "svg":"support/slwebview_files/architecture_33_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_33_d.png",
+  "backingUrl":"support/slwebview_files/architecture_33_d.json",
   "elements":[
    ":34",
    ":35"

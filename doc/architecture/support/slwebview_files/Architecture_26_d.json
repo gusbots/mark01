@@ -1,11 +1,11 @@
 [
  {
-  "sid":"Architecture:28",
+  "sid":"architecture:28",
   "className":"Simulink.Outport",
-  "icon":"Architecture4",
+  "icon":"architecture4",
   "name":"DCMotor1",
   "label":"DCMotor1",
-  "parent":"Architecture:26",
+  "parent":"architecture:26",
   "inspector":{
    "params":[
     "Port",
@@ -80,12 +80,12 @@
   }
  },
  {
-  "sid":"Architecture:29",
+  "sid":"architecture:29",
   "className":"Simulink.Outport",
-  "icon":"Architecture4",
+  "icon":"architecture4",
   "name":"DCMotor2",
   "label":"DCMotor2",
-  "parent":"Architecture:26",
+  "parent":"architecture:26",
   "inspector":{
    "params":[
     "Port",

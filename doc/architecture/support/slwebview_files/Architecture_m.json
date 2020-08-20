@@ -1,10 +1,10 @@
 [
  {
-  "sid":"Architecture",
+  "sid":"architecture",
   "className":"Simulink.BlockDiagram",
-  "icon":"Architecture0",
-  "name":"Architecture",
-  "label":"Architecture",
+  "icon":"architecture0",
+  "name":"architecture",
+  "label":"architecture",
   "parent":"",
   "inspector":{
    "params":[
@@ -16,8 +16,8 @@
     "Description"
    ],
    "values":[
-    "1.3",
-    "Thu Aug 13 18:12:58 2020",
+    "1.8",
+    "Fri Aug 14 13:55:34 2020",
     "disabled",
     "on",
     "off",
@@ -37,12 +37,12 @@
   ]
  },
  {
-  "sid":"Architecture:7",
+  "sid":"architecture:7",
   "className":"Simulink.SubSystem",
-  "icon":"Architecture2",
+  "icon":"architecture2",
   "name":"AA Batteries",
   "label":"AA Batteries",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "ShowPortLabels",
@@ -140,12 +140,12 @@
   }
  },
  {
-  "sid":"Architecture:4",
+  "sid":"architecture:4",
   "className":"Simulink.SubSystem",
-  "icon":"Architecture2",
+  "icon":"architecture2",
   "name":"AdaFruit DC Motor HAT",
   "label":"AdaFruit DC Motor HAT",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "ShowPortLabels",
@@ -243,12 +243,12 @@
   }
  },
  {
-  "sid":"Architecture:36",
+  "sid":"architecture:36",
   "className":"Simulink.SubSystem",
-  "icon":"Architecture2",
+  "icon":"architecture2",
   "name":"Battery_5V",
   "label":"Battery_5V",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "ShowPortLabels",
@@ -346,12 +346,12 @@
   }
  },
  {
-  "sid":"Architecture:26",
+  "sid":"architecture:26",
   "className":"Simulink.SubSystem",
-  "icon":"Architecture2",
+  "icon":"architecture2",
   "name":"LeftDCMotor",
   "label":"LeftDCMotor",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "ShowPortLabels",
@@ -449,12 +449,12 @@
   }
  },
  {
-  "sid":"Architecture:1",
+  "sid":"architecture:1",
   "className":"Simulink.SubSystem",
-  "icon":"Architecture2",
+  "icon":"architecture2",
   "name":"Raspberry PI",
   "label":"Raspberry PI",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "ShowPortLabels",
@@ -558,12 +558,339 @@
   }
  },
  {
-  "sid":"Architecture:33",
+  "sid":"architecture:42",
   "className":"Simulink.SubSystem",
-  "icon":"Architecture2",
+  "icon":"architecture2",
+  "name":"adafruit_motorkit",
+  "label":"adafruit_motorkit",
+  "parent":"architecture:1",
+  "inspector":{
+   "params":[
+    "ShowPortLabels",
+    "Permissions",
+    "ErrorFcn",
+    "PermitHierarchicalResolution",
+    "TreatAsAtomicUnit",
+    "TreatAsGroupedWhenPropagatingVariantConditions",
+    "RTWSystemCode",
+    "AllowZeroVariantControls",
+    "BlockChoice",
+    "CompiledActiveChoiceBlock",
+    "CompiledActiveChoiceControl",
+    "ExecutionDomainType",
+    "FunctionInterfaceSpec",
+    "FunctionWithSeparateData",
+    "GeneratePreprocessorConditionals",
+    "IsSubsystemVirtual",
+    "LabelModeActiveChoice",
+    "MemberBlocks",
+    "MinAlgLoopOccurrences",
+    "PartitionName",
+    "PropExecContextOutsideSubsystem",
+    "PropagateVariantConditions",
+    "RTWFcnName",
+    "RTWFcnNameOpts",
+    "RTWFileName",
+    "RTWFileNameOpts",
+    "RTWMemSecDataConstants",
+    "RTWMemSecDataInternal",
+    "RTWMemSecDataParameters",
+    "RTWMemSecFuncExecute",
+    "RTWMemSecFuncInitTerm",
+    "ScheduleAs",
+    "SetExecutionDomain",
+    "SystemSampleTime",
+    "TemplateBlock",
+    "Variant",
+    "VariantControl",
+    "VariantControlMode"
+   ],
+   "values":[
+    "FromPortIcon",
+    "ReadWrite",
+    "",
+    "All",
+    "off",
+    "on",
+    "Auto",
+    "off",
+    "",
+    "",
+    "",
+    "Deduce",
+    "void_void",
+    "off",
+    "off",
+    "on",
+    "",
+    "",
+    "off",
+    "",
+    "off",
+    "off",
+    "",
+    "Auto",
+    "",
+    "Auto",
+    "Inherit from model",
+    "Inherit from model",
+    "Inherit from model",
+    "Inherit from model",
+    "Inherit from model",
+    "Sample time",
+    "off",
+    "-1",
+    "",
+    "off",
+    "",
+    "Expression"
+   ],
+   "tabs":[
+    "Main",
+    "Code Generation",
+    "-Other"
+   ],
+   "tabs_idx":[
+    0,
+    6,
+    7
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"SubSystem",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"architecture:39",
+  "className":"Simulink.SubSystem",
+  "icon":"architecture2",
+  "name":"mark01.py",
+  "label":"mark01.py",
+  "parent":"architecture:1",
+  "inspector":{
+   "params":[
+    "ShowPortLabels",
+    "Permissions",
+    "ErrorFcn",
+    "PermitHierarchicalResolution",
+    "TreatAsAtomicUnit",
+    "TreatAsGroupedWhenPropagatingVariantConditions",
+    "RTWSystemCode",
+    "AllowZeroVariantControls",
+    "BlockChoice",
+    "CompiledActiveChoiceBlock",
+    "CompiledActiveChoiceControl",
+    "ExecutionDomainType",
+    "FunctionInterfaceSpec",
+    "FunctionWithSeparateData",
+    "GeneratePreprocessorConditionals",
+    "IsSubsystemVirtual",
+    "LabelModeActiveChoice",
+    "MemberBlocks",
+    "MinAlgLoopOccurrences",
+    "PartitionName",
+    "PropExecContextOutsideSubsystem",
+    "PropagateVariantConditions",
+    "RTWFcnName",
+    "RTWFcnNameOpts",
+    "RTWFileName",
+    "RTWFileNameOpts",
+    "RTWMemSecDataConstants",
+    "RTWMemSecDataInternal",
+    "RTWMemSecDataParameters",
+    "RTWMemSecFuncExecute",
+    "RTWMemSecFuncInitTerm",
+    "ScheduleAs",
+    "SetExecutionDomain",
+    "SystemSampleTime",
+    "TemplateBlock",
+    "Variant",
+    "VariantControl",
+    "VariantControlMode"
+   ],
+   "values":[
+    "FromPortIcon",
+    "ReadWrite",
+    "",
+    "All",
+    "off",
+    "on",
+    "Auto",
+    "off",
+    "",
+    "",
+    "",
+    "Deduce",
+    "void_void",
+    "off",
+    "off",
+    "on",
+    "",
+    "",
+    "off",
+    "",
+    "off",
+    "off",
+    "",
+    "Auto",
+    "",
+    "Auto",
+    "Inherit from model",
+    "Inherit from model",
+    "Inherit from model",
+    "Inherit from model",
+    "Inherit from model",
+    "Sample time",
+    "off",
+    "-1",
+    "",
+    "off",
+    "",
+    "Expression"
+   ],
+   "tabs":[
+    "Main",
+    "Code Generation",
+    "-Other"
+   ],
+   "tabs_idx":[
+    0,
+    6,
+    7
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"SubSystem",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"architecture:45",
+  "className":"Simulink.SubSystem",
+  "icon":"architecture2",
+  "name":"pygame",
+  "label":"pygame",
+  "parent":"architecture:1",
+  "inspector":{
+   "params":[
+    "ShowPortLabels",
+    "Permissions",
+    "ErrorFcn",
+    "PermitHierarchicalResolution",
+    "TreatAsAtomicUnit",
+    "TreatAsGroupedWhenPropagatingVariantConditions",
+    "RTWSystemCode",
+    "AllowZeroVariantControls",
+    "BlockChoice",
+    "CompiledActiveChoiceBlock",
+    "CompiledActiveChoiceControl",
+    "ExecutionDomainType",
+    "FunctionInterfaceSpec",
+    "FunctionWithSeparateData",
+    "GeneratePreprocessorConditionals",
+    "IsSubsystemVirtual",
+    "LabelModeActiveChoice",
+    "MemberBlocks",
+    "MinAlgLoopOccurrences",
+    "PartitionName",
+    "PropExecContextOutsideSubsystem",
+    "PropagateVariantConditions",
+    "RTWFcnName",
+    "RTWFcnNameOpts",
+    "RTWFileName",
+    "RTWFileNameOpts",
+    "RTWMemSecDataConstants",
+    "RTWMemSecDataInternal",
+    "RTWMemSecDataParameters",
+    "RTWMemSecFuncExecute",
+    "RTWMemSecFuncInitTerm",
+    "ScheduleAs",
+    "SetExecutionDomain",
+    "SystemSampleTime",
+    "TemplateBlock",
+    "Variant",
+    "VariantControl",
+    "VariantControlMode"
+   ],
+   "values":[
+    "FromPortIcon",
+    "ReadWrite",
+    "",
+    "All",
+    "off",
+    "on",
+    "Auto",
+    "off",
+    "",
+    "",
+    "",
+    "Deduce",
+    "void_void",
+    "off",
+    "off",
+    "on",
+    "",
+    "",
+    "off",
+    "",
+    "off",
+    "off",
+    "",
+    "Auto",
+    "",
+    "Auto",
+    "Inherit from model",
+    "Inherit from model",
+    "Inherit from model",
+    "Inherit from model",
+    "Inherit from model",
+    "Sample time",
+    "off",
+    "-1",
+    "",
+    "off",
+    "",
+    "Expression"
+   ],
+   "tabs":[
+    "Main",
+    "Code Generation",
+    "-Other"
+   ],
+   "tabs_idx":[
+    0,
+    6,
+    7
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"SubSystem",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"architecture:33",
+  "className":"Simulink.SubSystem",
+  "icon":"architecture2",
   "name":"RightDCMotor",
   "label":"RightDCMotor",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "ShowPortLabels",

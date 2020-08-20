@@ -9,11 +9,11 @@
       <!--RAWSTRING-->
     </g>
     <!--RAWSTRING-->
-    <g id="Architecture:33">
+    <g id="architecture:33">
       <!--RAWSTRING-->
       <g data-tags="blk">
         <!--RAWSTRING-->
-        <g id="Architecture:34">
+        <g id="architecture:34">
           <!--RAWSTRING-->
           <g data-tags="port">
             <g clip-path="none" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="2" stroke-opacity="1" stroke-width="2" transform="matrix(-1,0,0,-1,360,110)">
@@ -65,7 +65,7 @@
       <!--RAWSTRING-->
       <g data-tags="blk">
         <!--RAWSTRING-->
-        <g id="Architecture:35">
+        <g id="architecture:35">
           <!--RAWSTRING-->
           <g data-tags="port">
             <g clip-path="none" fill="none" opacity="1" stroke="#000000" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="2" stroke-opacity="1" stroke-width="2" transform="matrix(-1,0,0,-1,360,160)">
@@ -117,5 +117,5 @@
       <!--RAWSTRING-->
     </g>
   </g>
-  <!--generated on windows @ 2020-08-13 18:13:30 Eastern Daylight Time-->
+  <!--generated on windows @ 2020-08-18 12:19:10 Eastern Daylight Time-->
 </svg>

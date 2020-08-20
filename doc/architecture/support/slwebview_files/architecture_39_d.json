@@ -1,11 +1,11 @@
 [
  {
-  "sid":"architecture:34",
+  "sid":"architecture:41",
   "className":"Simulink.Outport",
   "icon":"architecture4",
-  "name":"DCMotor1",
-  "label":"DCMotor1",
-  "parent":"architecture:33",
+  "name":"motor1",
+  "label":"motor1",
+  "parent":"architecture:39",
   "inspector":{
    "params":[
     "Port",
@@ -80,12 +80,79 @@
   }
  },
  {
-  "sid":"architecture:35",
+  "sid":"architecture:40",
+  "className":"Simulink.Inport",
+  "icon":"architecture4",
+  "name":"joystick",
+  "label":"joystick",
+  "parent":"architecture:39",
+  "inspector":{
+   "params":[
+    "Port",
+    "IconDisplay",
+    "LatchByDelayingOutsideSignal",
+    "LatchInputForFeedbackSignals",
+    "OutputFunctionCall",
+    "OutMin",
+    "OutMax",
+    "OutDataTypeStr",
+    "LockScale",
+    "Unit",
+    "PortDimensions",
+    "VarSizeSig",
+    "SampleTime",
+    "SignalType",
+    "BusOutputAsStruct",
+    "InputConnect",
+    "Interpolate"
+   ],
+   "values":[
+    "1",
+    "Port number",
+    "off",
+    "off",
+    "off",
+    "[]",
+    "[]",
+    "Inherit: auto",
+    "off",
+    "inherit",
+    "-1",
+    "Inherit",
+    "-1",
+    "auto",
+    "off",
+    "",
+    "on"
+   ],
+   "tabs":[
+    "Main",
+    "Signal Attributes",
+    "-Other"
+   ],
+   "tabs_idx":[
+    0,
+    4,
+    14
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"Inport",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"architecture:48",
   "className":"Simulink.Outport",
   "icon":"architecture4",
-  "name":"DCMotor2",
-  "label":"DCMotor2",
-  "parent":"architecture:33",
+  "name":"motor4",
+  "label":"motor4",
+  "parent":"architecture:39",
   "inspector":{
    "params":[
     "Port",

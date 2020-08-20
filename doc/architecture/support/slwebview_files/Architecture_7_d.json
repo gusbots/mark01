@@ -1,11 +1,11 @@
 [
  {
-  "sid":"Architecture:9",
+  "sid":"architecture:9",
   "className":"Simulink.Outport",
-  "icon":"Architecture4",
+  "icon":"architecture4",
   "name":"6V",
   "label":"6V",
-  "parent":"Architecture:7",
+  "parent":"architecture:7",
   "inspector":{
    "params":[
     "Port",
@@ -80,12 +80,12 @@
   }
  },
  {
-  "sid":"Architecture:10",
+  "sid":"architecture:10",
   "className":"Simulink.Outport",
-  "icon":"Architecture4",
+  "icon":"architecture4",
   "name":"Ground",
   "label":"Ground",
-  "parent":"Architecture:7",
+  "parent":"architecture:7",
   "inspector":{
    "params":[
     "Port",

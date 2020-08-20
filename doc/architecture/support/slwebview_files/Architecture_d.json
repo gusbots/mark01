@@ -1,11 +1,11 @@
 [
  {
-  "sid":"Architecture:14",
+  "sid":"architecture:14",
   "className":"Simulink.Annotation",
-  "icon":"Architecture1",
+  "icon":"architecture1",
   "name":"",
   "label":"",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "Text",
@@ -49,12 +49,12 @@
   ]
  },
  {
-  "sid":"Architecture:13",
+  "sid":"architecture:13",
   "className":"Simulink.Annotation",
-  "icon":"Architecture1",
+  "icon":"architecture1",
   "name":"",
   "label":"",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "Text",
@@ -98,12 +98,12 @@
   ]
  },
  {
-  "sid":"Architecture:1",
+  "sid":"architecture:1",
   "className":"Simulink.SubSystem",
-  "icon":"Architecture2",
+  "icon":"architecture2",
   "name":"Raspberry PI",
   "label":"Raspberry PI",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "ShowPortLabels",
@@ -207,12 +207,12 @@
   }
  },
  {
-  "sid":"Architecture:4",
+  "sid":"architecture:4",
   "className":"Simulink.SubSystem",
-  "icon":"Architecture2",
+  "icon":"architecture2",
   "name":"AdaFruit DC Motor HAT",
   "label":"AdaFruit DC Motor HAT",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "ShowPortLabels",
@@ -310,12 +310,12 @@
   }
  },
  {
-  "sid":"Architecture:7",
+  "sid":"architecture:7",
   "className":"Simulink.SubSystem",
-  "icon":"Architecture2",
+  "icon":"architecture2",
   "name":"AA Batteries",
   "label":"AA Batteries",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "ShowPortLabels",
@@ -413,12 +413,12 @@
   }
  },
  {
-  "sid":"Architecture:26",
+  "sid":"architecture:26",
   "className":"Simulink.SubSystem",
-  "icon":"Architecture2",
+  "icon":"architecture2",
   "name":"LeftDCMotor",
   "label":"LeftDCMotor",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "ShowPortLabels",
@@ -516,12 +516,12 @@
   }
  },
  {
-  "sid":"Architecture:33",
+  "sid":"architecture:33",
   "className":"Simulink.SubSystem",
-  "icon":"Architecture2",
+  "icon":"architecture2",
   "name":"RightDCMotor",
   "label":"RightDCMotor",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "ShowPortLabels",
@@ -619,12 +619,12 @@
   }
  },
  {
-  "sid":"Architecture:36",
+  "sid":"architecture:36",
   "className":"Simulink.SubSystem",
-  "icon":"Architecture2",
+  "icon":"architecture2",
   "name":"Battery_5V",
   "label":"Battery_5V",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "ShowPortLabels",
@@ -722,12 +722,63 @@
   }
  },
  {
-  "sid":"Architecture:7#out:1",
+  "sid":"architecture:7#out:1",
   "className":"Simulink.Line",
-  "icon":"Architecture3",
+  "icon":"architecture3",
+  "name":"6V",
+  "label":"6V",
+  "parent":"architecture",
+  "inspector":{
+   "params":[
+    "SignalNameFromLabel",
+    "MustResolveToSignal",
+    "ShowPropagatedSignal",
+    "DataLogging",
+    "TestPoint",
+    "SignalObjectPackage",
+    "StorageClass",
+    "Description",
+    "documentLink"
+   ],
+   "values":[
+    "6V",
+    "off",
+    "off",
+    "off",
+    "off",
+    "Simulink",
+    "Auto",
+    "",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes",
+    "Logging and Accessibility",
+    "Code Generation",
+    "Documentation"
+   ],
+   "tabs_idx":[
+    0,
+    3,
+    5,
+    7
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":[
+  ]
+ },
+ {
+  "sid":"architecture:7#out:2",
+  "className":"Simulink.Line",
+  "icon":"architecture3",
   "name":"",
   "label":"",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "SignalNameFromLabel",
@@ -773,12 +824,12 @@
   ]
  },
  {
-  "sid":"Architecture:7#out:2",
+  "sid":"architecture:1#out:1",
   "className":"Simulink.Line",
-  "icon":"Architecture3",
+  "icon":"architecture3",
   "name":"",
   "label":"",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "SignalNameFromLabel",
@@ -824,12 +875,12 @@
   ]
  },
  {
-  "sid":"Architecture:1#out:1",
+  "sid":"architecture:26#out:1",
   "className":"Simulink.Line",
-  "icon":"Architecture3",
+  "icon":"architecture3",
   "name":"",
   "label":"",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "SignalNameFromLabel",
@@ -875,12 +926,12 @@
   ]
  },
  {
-  "sid":"Architecture:26#out:1",
+  "sid":"architecture:26#out:2",
   "className":"Simulink.Line",
-  "icon":"Architecture3",
+  "icon":"architecture3",
   "name":"",
   "label":"",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "SignalNameFromLabel",
@@ -926,12 +977,12 @@
   ]
  },
  {
-  "sid":"Architecture:26#out:2",
+  "sid":"architecture:33#out:1",
   "className":"Simulink.Line",
-  "icon":"Architecture3",
+  "icon":"architecture3",
   "name":"",
   "label":"",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "SignalNameFromLabel",
@@ -977,12 +1028,12 @@
   ]
  },
  {
-  "sid":"Architecture:33#out:1",
+  "sid":"architecture:33#out:2",
   "className":"Simulink.Line",
-  "icon":"Architecture3",
+  "icon":"architecture3",
   "name":"",
   "label":"",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "SignalNameFromLabel",
@@ -1028,63 +1079,12 @@
   ]
  },
  {
-  "sid":"Architecture:33#out:2",
+  "sid":"architecture:36#out:1",
   "className":"Simulink.Line",
-  "icon":"Architecture3",
+  "icon":"architecture3",
   "name":"",
   "label":"",
-  "parent":"Architecture",
-  "inspector":{
-   "params":[
-    "SignalNameFromLabel",
-    "MustResolveToSignal",
-    "ShowPropagatedSignal",
-    "DataLogging",
-    "TestPoint",
-    "SignalObjectPackage",
-    "StorageClass",
-    "Description",
-    "documentLink"
-   ],
-   "values":[
-    "",
-    "off",
-    "off",
-    "off",
-    "off",
-    "Simulink",
-    "Auto",
-    "",
-    ""
-   ],
-   "tabs":[
-    "Parameter Attributes",
-    "Logging and Accessibility",
-    "Code Generation",
-    "Documentation"
-   ],
-   "tabs_idx":[
-    0,
-    3,
-    5,
-    7
-   ]
-  },
-  "viewer":{
-   "jshandler":"webview/handlers/ElementHandler"
-  },
-  "obj_viewer":[
-  ],
-  "finder":[
-  ]
- },
- {
-  "sid":"Architecture:36#out:1",
-  "className":"Simulink.Line",
-  "icon":"Architecture3",
-  "name":"",
-  "label":"",
-  "parent":"Architecture",
+  "parent":"architecture",
   "inspector":{
    "params":[
     "SignalNameFromLabel",

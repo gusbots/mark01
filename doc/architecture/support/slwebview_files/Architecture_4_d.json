@@ -1,11 +1,11 @@
 [
  {
-  "sid":"Architecture:5",
+  "sid":"architecture:5",
   "className":"Simulink.Inport",
-  "icon":"Architecture4",
-  "name":"Headpin_32",
-  "label":"Headpin_32",
-  "parent":"Architecture:4",
+  "icon":"architecture4",
+  "name":"Header_40GPIO",
+  "label":"Header_40GPIO",
+  "parent":"architecture:4",
   "inspector":{
    "params":[
     "Port",
@@ -67,12 +67,12 @@
   }
  },
  {
-  "sid":"Architecture:11",
+  "sid":"architecture:11",
   "className":"Simulink.Inport",
-  "icon":"Architecture4",
+  "icon":"architecture4",
   "name":"Power",
   "label":"Power",
-  "parent":"Architecture:4",
+  "parent":"architecture:4",
   "inspector":{
    "params":[
     "Port",
@@ -134,12 +134,12 @@
   }
  },
  {
-  "sid":"Architecture:12",
+  "sid":"architecture:12",
   "className":"Simulink.Inport",
-  "icon":"Architecture4",
+  "icon":"architecture4",
   "name":"Ground",
   "label":"Ground",
-  "parent":"Architecture:4",
+  "parent":"architecture:4",
   "inspector":{
    "params":[
     "Port",
@@ -201,12 +201,12 @@
   }
  },
  {
-  "sid":"Architecture:15",
+  "sid":"architecture:15",
   "className":"Simulink.Inport",
-  "icon":"Architecture4",
+  "icon":"architecture4",
   "name":"M1_1",
   "label":"M1_1",
-  "parent":"Architecture:4",
+  "parent":"architecture:4",
   "inspector":{
    "params":[
     "Port",
@@ -268,12 +268,12 @@
   }
  },
  {
-  "sid":"Architecture:16",
+  "sid":"architecture:16",
   "className":"Simulink.Inport",
-  "icon":"Architecture4",
+  "icon":"architecture4",
   "name":"M1_2",
   "label":"M1_2",
-  "parent":"Architecture:4",
+  "parent":"architecture:4",
   "inspector":{
    "params":[
     "Port",
@@ -335,12 +335,12 @@
   }
  },
  {
-  "sid":"Architecture:17",
+  "sid":"architecture:17",
   "className":"Simulink.Inport",
-  "icon":"Architecture4",
+  "icon":"architecture4",
   "name":"M2_1",
   "label":"M2_1",
-  "parent":"Architecture:4",
+  "parent":"architecture:4",
   "inspector":{
    "params":[
     "Port",
@@ -402,12 +402,12 @@
   }
  },
  {
-  "sid":"Architecture:18",
+  "sid":"architecture:18",
   "className":"Simulink.Inport",
-  "icon":"Architecture4",
+  "icon":"architecture4",
   "name":"M2_2",
   "label":"M2_2",
-  "parent":"Architecture:4",
+  "parent":"architecture:4",
   "inspector":{
    "params":[
     "Port",
@@ -469,12 +469,12 @@
   }
  },
  {
-  "sid":"Architecture:19",
+  "sid":"architecture:19",
   "className":"Simulink.Inport",
-  "icon":"Architecture4",
+  "icon":"architecture4",
   "name":"M3_1",
   "label":"M3_1",
-  "parent":"Architecture:4",
+  "parent":"architecture:4",
   "inspector":{
    "params":[
     "Port",
@@ -536,12 +536,12 @@
   }
  },
  {
-  "sid":"Architecture:20",
+  "sid":"architecture:20",
   "className":"Simulink.Inport",
-  "icon":"Architecture4",
+  "icon":"architecture4",
   "name":"M3_2",
   "label":"M3_2",
-  "parent":"Architecture:4",
+  "parent":"architecture:4",
   "inspector":{
    "params":[
     "Port",
@@ -603,12 +603,12 @@
   }
  },
  {
-  "sid":"Architecture:21",
+  "sid":"architecture:21",
   "className":"Simulink.Inport",
-  "icon":"Architecture4",
+  "icon":"architecture4",
   "name":"M4_1",
   "label":"M4_1",
-  "parent":"Architecture:4",
+  "parent":"architecture:4",
   "inspector":{
    "params":[
     "Port",
@@ -670,12 +670,12 @@
   }
  },
  {
-  "sid":"Architecture:22",
+  "sid":"architecture:22",
   "className":"Simulink.Inport",
-  "icon":"Architecture4",
+  "icon":"architecture4",
   "name":"M4_2",
   "label":"M4_2",
-  "parent":"Architecture:4",
+  "parent":"architecture:4",
   "inspector":{
    "params":[
     "Port",

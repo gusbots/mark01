@@ -1,11 +1,11 @@
 [
  {
-  "sid":"architecture:38",
+  "sid":"architecture:47",
   "className":"Simulink.Outport",
   "icon":"architecture4",
-  "name":"Power_5V",
-  "label":"Power_5V",
-  "parent":"architecture:36",
+  "name":"joystick_inputs",
+  "label":"joystick_inputs",
+  "parent":"architecture:45",
   "inspector":{
    "params":[
     "Port",

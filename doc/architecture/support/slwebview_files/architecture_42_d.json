@@ -1,11 +1,11 @@
 [
  {
-  "sid":"architecture:34",
+  "sid":"architecture:44",
   "className":"Simulink.Outport",
   "icon":"architecture4",
-  "name":"DCMotor1",
-  "label":"DCMotor1",
-  "parent":"architecture:33",
+  "name":"i2c",
+  "label":"i2c",
+  "parent":"architecture:42",
   "inspector":{
    "params":[
     "Port",
@@ -80,16 +80,19 @@
   }
  },
  {
-  "sid":"architecture:35",
-  "className":"Simulink.Outport",
+  "sid":"architecture:43",
+  "className":"Simulink.Inport",
   "icon":"architecture4",
-  "name":"DCMotor2",
-  "label":"DCMotor2",
-  "parent":"architecture:33",
+  "name":"motor1",
+  "label":"motor1",
+  "parent":"architecture:42",
   "inspector":{
    "params":[
     "Port",
     "IconDisplay",
+    "LatchByDelayingOutsideSignal",
+    "LatchInputForFeedbackSignals",
+    "OutputFunctionCall",
     "OutMin",
     "OutMax",
     "OutDataTypeStr",
@@ -100,21 +103,15 @@
     "SampleTime",
     "SignalType",
     "BusOutputAsStruct",
-    "EnsureOutportIsVirtual",
-    "InitialOutput",
-    "MustResolveToSignalObject",
-    "OutputWhenDisabled",
-    "OutputWhenUnConnected",
-    "OutputWhenUnconnectedValue",
-    "SignalName",
-    "SignalObject",
-    "SourceOfInitialOutputValue",
-    "StorageClass",
-    "VectorParamsAs1DForOutWhenUnconnected"
+    "InputConnect",
+    "Interpolate"
    ],
    "values":[
-    "2",
+    "1",
     "Port number",
+    "off",
+    "off",
+    "off",
     "[]",
     "[]",
     "Inherit: auto",
@@ -125,18 +122,8 @@
     "-1",
     "auto",
     "off",
-    "off",
-    "[]",
-    "off",
-    "held",
-    "off",
-    "0",
     "",
-    [
-    ],
-    "Dialog",
-    "Auto",
-    "off"
+    "on"
    ],
    "tabs":[
     "Main",
@@ -145,8 +132,8 @@
    ],
    "tabs_idx":[
     0,
-    2,
-    11
+    4,
+    14
    ]
   },
   "viewer":{
@@ -155,7 +142,74 @@
   "obj_viewer":[
   ],
   "finder":{
-   "blocktype":"Outport",
+   "blocktype":"Inport",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"architecture:49",
+  "className":"Simulink.Inport",
+  "icon":"architecture4",
+  "name":"motor4",
+  "label":"motor4",
+  "parent":"architecture:42",
+  "inspector":{
+   "params":[
+    "Port",
+    "IconDisplay",
+    "LatchByDelayingOutsideSignal",
+    "LatchInputForFeedbackSignals",
+    "OutputFunctionCall",
+    "OutMin",
+    "OutMax",
+    "OutDataTypeStr",
+    "LockScale",
+    "Unit",
+    "PortDimensions",
+    "VarSizeSig",
+    "SampleTime",
+    "SignalType",
+    "BusOutputAsStruct",
+    "InputConnect",
+    "Interpolate"
+   ],
+   "values":[
+    "2",
+    "Port number",
+    "off",
+    "off",
+    "off",
+    "[]",
+    "[]",
+    "Inherit: auto",
+    "off",
+    "inherit",
+    "-1",
+    "Inherit",
+    "-1",
+    "auto",
+    "off",
+    "",
+    "on"
+   ],
+   "tabs":[
+    "Main",
+    "Signal Attributes",
+    "-Other"
+   ],
+   "tabs_idx":[
+    0,
+    4,
+    14
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"Inport",
    "masktype":""
   }
  }
