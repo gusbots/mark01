@@ -4,21 +4,23 @@ I am putting together this robot as part of my first robotics project. A robot w
 
 Mark 01 is a differential robot that uses a Raspberry PI as the main source of processing.
 
-[Add robot photo]
+<img src="doc/images/robot_v1.jpg" width="50%" height="50%">
 
 # Hardware architecture
 
-[Add arch picture]
+<img src="doc/images/arch.PNG">
 
 # Software dependencies
 
+```
 sudo pip3 install adafruit-circuitpython-motorkit
 sudo pip3 install ds4drv
-
+```
 If you are using a old version of Raspberry PI OS you may need to install pygame.
 
+```
 sudo pip3 install pygame
-
+```
 
 # Videos
 
