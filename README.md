@@ -16,7 +16,7 @@ Mark 01 is a differential robot that uses a Raspberry PI as the main source of p
 sudo pip3 install adafruit-circuitpython-motorkit
 sudo pip3 install ds4drv
 ```
-If you are using a old version of Raspberry PI OS you may need to install pygame.
+If you are using an old version of Raspberry PI OS you may need to install pygame.
 
 ```
 sudo pip3 install pygame
