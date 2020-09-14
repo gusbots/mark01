@@ -26,6 +26,6 @@ sudo pip3 install pygame
 
 And this project will be followed by a sequence of YouTube videos.
 
-## First steps - Drive motors and PS4 joystick in tank mode
+## Part 1 - TT Motors + Raspberry PI + PS4 Controller
 
-[Add link to the video]
+https://youtu.be/60l3N4I0JmI

@@ -1,18 +1,28 @@
 '''
-    Mark 01 - Driving the DC motors with PS4 controller in tank mode
+    Mark 01 - Driving the DC motors with PS4 controller in arcade mode
     
-    This first version of the robot software will drive the 2 DC motors using a PS4 controller.
-    The joystick interface is tank mode where each stick of the joystick commands a different motor.
+    Now you can control the robot in tank or arcade mode. Use the touch pad
+    button to switch between.
     
 '''
 import pygame
 from adafruit_motorkit import MotorKit
+from gusbots import joystick
 
 # Initialize Motor HAT library
 kit = MotorKit()
 
 # Initialize pygame (used to read the joystick)
 pygame.init()
+
+# Show available joysticks in the system
+# In case there are more than 1 joystick connected. Check what
+# index is the one you want to use and pass to the joystick.create.
+joystick.showAvailable()
+
+# Initialize selected joystick. By default it uses ARCADE mode
+# and index 0 for the jostick.
+joy = joystick.create(joystickIndex=0, mode=joystick.ARCADE_MODE)
 
 # Global variables
 done = False            # when True, program will end
@@ -21,56 +31,18 @@ useJoystick = 0         # select what joystick index to use
 # Used to manage how fast the main loop runs
 clock = pygame.time.Clock()
 
-# Initialize the joysticks.
-pygame.joystick.init()
-
-# Get count of joysticks.
-joystick_count = pygame.joystick.get_count()
-print("Joystick count:" + str(joystick_count))
-
-# Show all available joysticks
-for i in range(joystick_count):
-    joystick = pygame.joystick.Joystick(i)
-    joystick.init()
-
-    # Get the name from the OS for the controller/joystick.
-    name = joystick.get_name()
-    print("Joystick name:" + name)
-
-    # Usually axis run in pairs, up/down for one, and left/right for
-    # the other.
-    axes = joystick.get_numaxes()
-    print("Number of axes:" + str(axes))
-
-# Setup what joystick to use
-joystick = pygame.joystick.Joystick(useJoystick)
-joystick.init()
-axes = joystick.get_numaxes()
-buttons = joystick.get_numbuttons()
-
 
 # Main program loop
 ###################
 while not done:
-    for event in pygame.event.get(): # User did something.
-        pass
-            
-    for i in range(axes):
-        axis = joystick.get_axis(i)
-        # Left stick up/down (right wheel)
-        if i == 1:
-            if axis < 0.3 and axis > -0.3:
-                axis = 0
-            kit.motor1.throttle = axis
-            print("Motor 1:", axis)
-
-        # Right stick up/down (left wheel)
-        if i == 5:
-            if axis < 0.3 and axis > -0.3:
-                axis = 0
-            kit.motor4.throttle = axis
-            print("Motor 4:", axis)
-
+    left, right = joy.tick()
+             
+    kit.motor1.throttle = left
+    kit.motor4.throttle = right
+    
+    # Print some info always in the same line
+    print("\r", "Mode", joy.mode, "Left Motor (1)", '{:02.2f}'.format(left), "Right Motor (4)", '{:02.2f}'.format(right),"  ", end='')
+    
     # Limit to 20 frames per second.
     clock.tick(20)
 
