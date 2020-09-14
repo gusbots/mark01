@@ -13,11 +13,11 @@ ARCADE_MODE = 1
 class create:
 
     def __init__(self, joystickIndex=0, mode=ARCADE_MODE):
-    '''
+        '''
         joystickIndex: Use the showAvailable function to verify all the index of all the
                        joysticks connected to the system and pass the index here to use it.
         mode:          select TANK_MODE or ARCADE_MODE
-    '''
+        '''
         self.joy = pygame.joystick.Joystick(joystickIndex)
         self.joy.init()
         self.axes = self.joy.get_numaxes()
