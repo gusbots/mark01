@@ -722,9 +722,269 @@
   }
  },
  {
+  "sid":"architecture:50",
+  "className":"Simulink.SubSystem",
+  "icon":"architecture2",
+  "name":"LeftWheelEncoder",
+  "label":"LeftWheelEncoder",
+  "parent":"architecture",
+  "inspector":{
+   "params":[
+    "ShowPortLabels",
+    "BlockChoice",
+    "TemplateBlock",
+    "MemberBlocks",
+    "Permissions",
+    "ErrorFcn",
+    "PermitHierarchicalResolution",
+    "TreatAsAtomicUnit",
+    "MinAlgLoopOccurrences",
+    "PropExecContextOutsideSubsystem",
+    "ScheduleAs",
+    "PartitionName",
+    "SystemSampleTime",
+    "SetExecutionDomain",
+    "ExecutionDomainType",
+    "RTWSystemCode",
+    "RTWFcnNameOpts",
+    "RTWFcnName",
+    "RTWFileNameOpts",
+    "RTWFileName",
+    "FunctionInterfaceSpec",
+    "FunctionWithSeparateData",
+    "RTWMemSecFuncInitTerm",
+    "RTWMemSecFuncExecute",
+    "RTWMemSecDataConstants",
+    "RTWMemSecDataInternal",
+    "RTWMemSecDataParameters",
+    "IsSubsystemVirtual",
+    "VariantControlMode",
+    "Variant",
+    "VariantControl",
+    "LabelModeActiveChoice",
+    "GeneratePreprocessorConditionals",
+    "AllowZeroVariantControls",
+    "PropagateVariantConditions",
+    "CompiledActiveChoiceControl",
+    "CompiledActiveChoiceBlock",
+    "TreatAsGroupedWhenPropagatingVariantConditions"
+   ],
+   "values":[
+    "FromPortIcon",
+    "",
+    "",
+    "",
+    "ReadWrite",
+    "",
+    "All",
+    "off",
+    "off",
+    "off",
+    "Sample time",
+    "",
+    "-1",
+    "off",
+    "Deduce",
+    "Auto",
+    "Auto",
+    "",
+    "Auto",
+    "",
+    "void_void",
+    "off",
+    "Inherit from model",
+    "Inherit from model",
+    "Inherit from model",
+    "Inherit from model",
+    "Inherit from model",
+    "on",
+    "Expression",
+    "off",
+    "",
+    "",
+    "off",
+    "off",
+    "off",
+    "",
+    "",
+    "on"
+   ],
+   "tabs":[
+   ],
+   "tabs_idx":[
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ContainerHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"SubSystem",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"architecture:63",
+  "className":"Simulink.SubSystem",
+  "icon":"architecture2",
+  "name":"RightWheelEncoder",
+  "label":"RightWheelEncoder",
+  "parent":"architecture",
+  "inspector":{
+   "params":[
+    "ShowPortLabels",
+    "BlockChoice",
+    "TemplateBlock",
+    "MemberBlocks",
+    "Permissions",
+    "ErrorFcn",
+    "PermitHierarchicalResolution",
+    "TreatAsAtomicUnit",
+    "MinAlgLoopOccurrences",
+    "PropExecContextOutsideSubsystem",
+    "ScheduleAs",
+    "PartitionName",
+    "SystemSampleTime",
+    "SetExecutionDomain",
+    "ExecutionDomainType",
+    "RTWSystemCode",
+    "RTWFcnNameOpts",
+    "RTWFcnName",
+    "RTWFileNameOpts",
+    "RTWFileName",
+    "FunctionInterfaceSpec",
+    "FunctionWithSeparateData",
+    "RTWMemSecFuncInitTerm",
+    "RTWMemSecFuncExecute",
+    "RTWMemSecDataConstants",
+    "RTWMemSecDataInternal",
+    "RTWMemSecDataParameters",
+    "IsSubsystemVirtual",
+    "VariantControlMode",
+    "Variant",
+    "VariantControl",
+    "LabelModeActiveChoice",
+    "GeneratePreprocessorConditionals",
+    "AllowZeroVariantControls",
+    "PropagateVariantConditions",
+    "CompiledActiveChoiceControl",
+    "CompiledActiveChoiceBlock",
+    "TreatAsGroupedWhenPropagatingVariantConditions"
+   ],
+   "values":[
+    "FromPortIcon",
+    "",
+    "",
+    "",
+    "ReadWrite",
+    "",
+    "All",
+    "off",
+    "off",
+    "off",
+    "Sample time",
+    "",
+    "-1",
+    "off",
+    "Deduce",
+    "Auto",
+    "Auto",
+    "",
+    "Auto",
+    "",
+    "void_void",
+    "off",
+    "Inherit from model",
+    "Inherit from model",
+    "Inherit from model",
+    "Inherit from model",
+    "Inherit from model",
+    "on",
+    "Expression",
+    "off",
+    "",
+    "",
+    "off",
+    "off",
+    "off",
+    "",
+    "",
+    "on"
+   ],
+   "tabs":[
+   ],
+   "tabs_idx":[
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ContainerHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"SubSystem",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"architecture:69",
+  "className":"Simulink.Ground",
+  "icon":"architecture3",
+  "name":"Ground",
+  "label":"Ground",
+  "parent":"architecture",
+  "inspector":{
+   "params":[
+   ],
+   "values":[
+   ],
+   "tabs":[
+   ],
+   "tabs_idx":[
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"Ground",
+   "masktype":""
+  }
+ },
+ {
+  "sid":"architecture:70",
+  "className":"Simulink.Ground",
+  "icon":"architecture3",
+  "name":"Ground1",
+  "label":"Ground1",
+  "parent":"architecture",
+  "inspector":{
+   "params":[
+   ],
+   "values":[
+   ],
+   "tabs":[
+   ],
+   "tabs_idx":[
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":{
+   "blocktype":"Ground",
+   "masktype":""
+  }
+ },
+ {
   "sid":"architecture:7#out:1",
   "className":"Simulink.Line",
-  "icon":"architecture3",
+  "icon":"architecture4",
   "name":"6V",
   "label":"6V",
   "parent":"architecture",
@@ -775,7 +1035,7 @@
  {
   "sid":"architecture:7#out:2",
   "className":"Simulink.Line",
-  "icon":"architecture3",
+  "icon":"architecture4",
   "name":"",
   "label":"",
   "parent":"architecture",
@@ -824,9 +1084,9 @@
   ]
  },
  {
-  "sid":"architecture:1#out:1",
+  "sid":"architecture:1#out:2",
   "className":"Simulink.Line",
-  "icon":"architecture3",
+  "icon":"architecture4",
   "name":"",
   "label":"",
   "parent":"architecture",
@@ -877,7 +1137,7 @@
  {
   "sid":"architecture:26#out:1",
   "className":"Simulink.Line",
-  "icon":"architecture3",
+  "icon":"architecture4",
   "name":"",
   "label":"",
   "parent":"architecture",
@@ -928,7 +1188,7 @@
  {
   "sid":"architecture:26#out:2",
   "className":"Simulink.Line",
-  "icon":"architecture3",
+  "icon":"architecture4",
   "name":"",
   "label":"",
   "parent":"architecture",
@@ -979,7 +1239,7 @@
  {
   "sid":"architecture:33#out:1",
   "className":"Simulink.Line",
-  "icon":"architecture3",
+  "icon":"architecture4",
   "name":"",
   "label":"",
   "parent":"architecture",
@@ -1030,7 +1290,7 @@
  {
   "sid":"architecture:33#out:2",
   "className":"Simulink.Line",
-  "icon":"architecture3",
+  "icon":"architecture4",
   "name":"",
   "label":"",
   "parent":"architecture",
@@ -1081,7 +1341,262 @@
  {
   "sid":"architecture:36#out:1",
   "className":"Simulink.Line",
-  "icon":"architecture3",
+  "icon":"architecture4",
+  "name":"",
+  "label":"",
+  "parent":"architecture",
+  "inspector":{
+   "params":[
+    "SignalNameFromLabel",
+    "MustResolveToSignal",
+    "ShowPropagatedSignal",
+    "DataLogging",
+    "TestPoint",
+    "SignalObjectPackage",
+    "StorageClass",
+    "Description",
+    "documentLink"
+   ],
+   "values":[
+    "",
+    "off",
+    "off",
+    "off",
+    "off",
+    "Simulink",
+    "Auto",
+    "",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes",
+    "Logging and Accessibility",
+    "Code Generation",
+    "Documentation"
+   ],
+   "tabs_idx":[
+    0,
+    3,
+    5,
+    7
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":[
+  ]
+ },
+ {
+  "sid":"architecture:50#out:1",
+  "className":"Simulink.Line",
+  "icon":"architecture4",
+  "name":"OUT",
+  "label":"OUT",
+  "parent":"architecture",
+  "inspector":{
+   "params":[
+    "SignalNameFromLabel",
+    "MustResolveToSignal",
+    "ShowPropagatedSignal",
+    "DataLogging",
+    "TestPoint",
+    "SignalObjectPackage",
+    "StorageClass",
+    "Description",
+    "documentLink"
+   ],
+   "values":[
+    "OUT",
+    "off",
+    "off",
+    "off",
+    "off",
+    "Simulink",
+    "Auto",
+    "",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes",
+    "Logging and Accessibility",
+    "Code Generation",
+    "Documentation"
+   ],
+   "tabs_idx":[
+    0,
+    3,
+    5,
+    7
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":[
+  ]
+ },
+ {
+  "sid":"architecture:63#out:1",
+  "className":"Simulink.Line",
+  "icon":"architecture4",
+  "name":"OUT",
+  "label":"OUT",
+  "parent":"architecture",
+  "inspector":{
+   "params":[
+    "SignalNameFromLabel",
+    "MustResolveToSignal",
+    "ShowPropagatedSignal",
+    "DataLogging",
+    "TestPoint",
+    "SignalObjectPackage",
+    "StorageClass",
+    "Description",
+    "documentLink"
+   ],
+   "values":[
+    "OUT",
+    "off",
+    "off",
+    "off",
+    "off",
+    "Simulink",
+    "Auto",
+    "",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes",
+    "Logging and Accessibility",
+    "Code Generation",
+    "Documentation"
+   ],
+   "tabs_idx":[
+    0,
+    3,
+    5,
+    7
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":[
+  ]
+ },
+ {
+  "sid":"architecture:69#out:1",
+  "className":"Simulink.Line",
+  "icon":"architecture4",
+  "name":"",
+  "label":"",
+  "parent":"architecture",
+  "inspector":{
+   "params":[
+    "SignalNameFromLabel",
+    "MustResolveToSignal",
+    "ShowPropagatedSignal",
+    "DataLogging",
+    "TestPoint",
+    "SignalObjectPackage",
+    "StorageClass",
+    "Description",
+    "documentLink"
+   ],
+   "values":[
+    "",
+    "off",
+    "off",
+    "off",
+    "off",
+    "Simulink",
+    "Auto",
+    "",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes",
+    "Logging and Accessibility",
+    "Code Generation",
+    "Documentation"
+   ],
+   "tabs_idx":[
+    0,
+    3,
+    5,
+    7
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":[
+  ]
+ },
+ {
+  "sid":"architecture:70#out:1",
+  "className":"Simulink.Line",
+  "icon":"architecture4",
+  "name":"",
+  "label":"",
+  "parent":"architecture",
+  "inspector":{
+   "params":[
+    "SignalNameFromLabel",
+    "MustResolveToSignal",
+    "ShowPropagatedSignal",
+    "DataLogging",
+    "TestPoint",
+    "SignalObjectPackage",
+    "StorageClass",
+    "Description",
+    "documentLink"
+   ],
+   "values":[
+    "",
+    "off",
+    "off",
+    "off",
+    "off",
+    "Simulink",
+    "Auto",
+    "",
+    ""
+   ],
+   "tabs":[
+    "Parameter Attributes",
+    "Logging and Accessibility",
+    "Code Generation",
+    "Documentation"
+   ],
+   "tabs_idx":[
+    0,
+    3,
+    5,
+    7
+   ]
+  },
+  "viewer":{
+   "jshandler":"webview/handlers/ElementHandler"
+  },
+  "obj_viewer":[
+  ],
+  "finder":[
+  ]
+ },
+ {
+  "sid":"architecture:1#out:1",
+  "className":"Simulink.Line",
+  "icon":"architecture4",
   "name":"",
   "label":"",
   "parent":"architecture",

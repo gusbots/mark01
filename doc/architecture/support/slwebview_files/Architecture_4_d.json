@@ -2,9 +2,9 @@
  {
   "sid":"architecture:5",
   "className":"Simulink.Inport",
-  "icon":"architecture4",
-  "name":"Header_40GPIO",
-  "label":"Header_40GPIO",
+  "icon":"architecture3",
+  "name":"Header_I2C",
+  "label":"Header_I2C",
   "parent":"architecture:4",
   "inspector":{
    "params":[
@@ -69,7 +69,7 @@
  {
   "sid":"architecture:11",
   "className":"Simulink.Inport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"Power",
   "label":"Power",
   "parent":"architecture:4",
@@ -136,7 +136,7 @@
  {
   "sid":"architecture:12",
   "className":"Simulink.Inport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"Ground",
   "label":"Ground",
   "parent":"architecture:4",
@@ -203,7 +203,7 @@
  {
   "sid":"architecture:15",
   "className":"Simulink.Inport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"M1_1",
   "label":"M1_1",
   "parent":"architecture:4",
@@ -270,7 +270,7 @@
  {
   "sid":"architecture:16",
   "className":"Simulink.Inport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"M1_2",
   "label":"M1_2",
   "parent":"architecture:4",
@@ -337,7 +337,7 @@
  {
   "sid":"architecture:17",
   "className":"Simulink.Inport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"M2_1",
   "label":"M2_1",
   "parent":"architecture:4",
@@ -404,7 +404,7 @@
  {
   "sid":"architecture:18",
   "className":"Simulink.Inport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"M2_2",
   "label":"M2_2",
   "parent":"architecture:4",
@@ -471,7 +471,7 @@
  {
   "sid":"architecture:19",
   "className":"Simulink.Inport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"M3_1",
   "label":"M3_1",
   "parent":"architecture:4",
@@ -538,7 +538,7 @@
  {
   "sid":"architecture:20",
   "className":"Simulink.Inport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"M3_2",
   "label":"M3_2",
   "parent":"architecture:4",
@@ -605,7 +605,7 @@
  {
   "sid":"architecture:21",
   "className":"Simulink.Inport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"M4_1",
   "label":"M4_1",
   "parent":"architecture:4",
@@ -672,7 +672,7 @@
  {
   "sid":"architecture:22",
   "className":"Simulink.Inport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"M4_2",
   "label":"M4_2",
   "parent":"architecture:4",

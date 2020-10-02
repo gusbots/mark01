@@ -2,7 +2,7 @@
  {
   "sid":"architecture:38",
   "className":"Simulink.Outport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"Power_5V",
   "label":"Power_5V",
   "parent":"architecture:36",

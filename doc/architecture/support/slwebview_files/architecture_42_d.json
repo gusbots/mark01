@@ -2,7 +2,7 @@
  {
   "sid":"architecture:44",
   "className":"Simulink.Outport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"i2c",
   "label":"i2c",
   "parent":"architecture:42",
@@ -82,7 +82,7 @@
  {
   "sid":"architecture:43",
   "className":"Simulink.Inport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"motor1",
   "label":"motor1",
   "parent":"architecture:42",
@@ -149,7 +149,7 @@
  {
   "sid":"architecture:49",
   "className":"Simulink.Inport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"motor4",
   "label":"motor4",
   "parent":"architecture:42",

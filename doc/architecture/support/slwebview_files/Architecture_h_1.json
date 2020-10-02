@@ -10,7 +10,9 @@
    4,
    5,
    6,
-   10
+   7,
+   15,
+   16
   ],
   "name":"architecture",
   "fullname":"architecture",
@@ -28,14 +30,23 @@
    ":26",
    ":33",
    ":36",
+   ":50",
+   ":63",
+   ":69",
+   ":70",
    ":7#out:1",
    ":7#out:2",
-   ":1#out:1",
+   ":1#out:2",
    ":26#out:1",
    ":26#out:2",
    ":33#out:1",
    ":33#out:2",
-   ":36#out:1"
+   ":36#out:1",
+   ":50#out:1",
+   ":63#out:1",
+   ":69#out:1",
+   ":70#out:1",
+   ":1#out:1"
   ],
   "sameAsElement":false
  },
@@ -129,13 +140,35 @@
  },
  {
   "hid":6,
+  "sid":"architecture:50",
+  "esid":"architecture:50",
+  "parent":1,
+  "children":[
+  ],
+  "name":"LeftWheelEncoder",
+  "fullname":"architecture/LeftWheelEncoder",
+  "label":"LeftWheelEncoder",
+  "icon":"architecture2",
+  "svg":"support/slwebview_files/architecture_50_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_50_d.png",
+  "backingUrl":"support/slwebview_files/architecture_50_d.json",
+  "elements":[
+   ":58",
+   ":59",
+   ":60"
+  ],
+  "sameAsElement":true
+ },
+ {
+  "hid":7,
   "sid":"architecture:1",
   "esid":"architecture:1",
   "parent":1,
   "children":[
-   7,
    8,
-   9
+   9,
+   10,
+   14
   ],
   "name":"Raspberry PI",
   "fullname":"architecture/Raspberry PI",
@@ -145,23 +178,54 @@
   "thumbnail":"support/slwebview_files/architecture_1_d.png",
   "backingUrl":"support/slwebview_files/architecture_1_d.json",
   "elements":[
+   ":78",
    ":3",
    ":2",
    ":39",
    ":42",
    ":45",
+   ":61",
+   ":62",
+   ":67",
+   ":71",
    ":42#out:1",
    ":39#out:1",
    ":39#out:2",
-   ":45#out:1"
+   ":45#out:1",
+   ":61#out:1",
+   ":62#out:1",
+   ":71#out:1",
+   ":71#out:2"
   ],
   "sameAsElement":true
  },
  {
-  "hid":7,
+  "hid":8,
+  "sid":"architecture:71",
+  "esid":"architecture:71",
+  "parent":7,
+  "children":[
+  ],
+  "name":"RPi.GPIO",
+  "fullname":"architecture/Raspberry PI/RPi.GPIO",
+  "label":"RPi.GPIO",
+  "icon":"architecture2",
+  "svg":"support/slwebview_files/architecture_71_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_71_d.png",
+  "backingUrl":"support/slwebview_files/architecture_71_d.json",
+  "elements":[
+   ":72",
+   ":73",
+   ":74",
+   ":75"
+  ],
+  "sameAsElement":true
+ },
+ {
+  "hid":9,
   "sid":"architecture:42",
   "esid":"architecture:42",
-  "parent":6,
+  "parent":7,
   "children":[
   ],
   "name":"adafruit_motorkit",
@@ -179,11 +243,14 @@
   "sameAsElement":true
  },
  {
-  "hid":8,
+  "hid":10,
   "sid":"architecture:39",
   "esid":"architecture:39",
-  "parent":6,
+  "parent":7,
   "children":[
+   11,
+   12,
+   13
   ],
   "name":"mark01.py",
   "fullname":"architecture/Raspberry PI/mark01.py",
@@ -195,15 +262,94 @@
   "elements":[
    ":41",
    ":40",
-   ":48"
+   ":48",
+   ":76",
+   ":77",
+   ":79",
+   ":86",
+   ":91",
+   ":76#out:1",
+   ":77#out:1",
+   ":40#out:1",
+   ":86#out:1",
+   ":86#out:2",
+   ":79#out:1",
+   ":79#out:2"
   ],
   "sameAsElement":true
  },
  {
-  "hid":9,
+  "hid":11,
+  "sid":"architecture:79",
+  "esid":"architecture:79",
+  "parent":10,
+  "children":[
+  ],
+  "name":"encoder",
+  "fullname":"architecture/Raspberry PI/mark01.py/encoder",
+  "label":"encoder",
+  "icon":"architecture2",
+  "svg":"support/slwebview_files/architecture_79_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_79_d.png",
+  "backingUrl":"support/slwebview_files/architecture_79_d.json",
+  "elements":[
+   ":81",
+   ":82",
+   ":83",
+   ":85"
+  ],
+  "sameAsElement":true
+ },
+ {
+  "hid":12,
+  "sid":"architecture:86",
+  "esid":"architecture:86",
+  "parent":10,
+  "children":[
+  ],
+  "name":"joystick",
+  "fullname":"architecture/Raspberry PI/mark01.py/joystick",
+  "label":"joystick",
+  "icon":"architecture2",
+  "svg":"support/slwebview_files/architecture_86_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_86_d.png",
+  "backingUrl":"support/slwebview_files/architecture_86_d.json",
+  "elements":[
+   ":87",
+   ":89",
+   ":90"
+  ],
+  "sameAsElement":true
+ },
+ {
+  "hid":13,
+  "sid":"architecture:91",
+  "esid":"architecture:91",
+  "parent":10,
+  "children":[
+  ],
+  "name":"speedEstimator",
+  "fullname":"architecture/Raspberry PI/mark01.py/speedEstimator",
+  "label":"speedEstimator",
+  "icon":"architecture2",
+  "svg":"support/slwebview_files/architecture_91_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_91_d.png",
+  "backingUrl":"support/slwebview_files/architecture_91_d.json",
+  "elements":[
+   ":92",
+   ":93",
+   ":96",
+   ":97",
+   ":98",
+   ":99"
+  ],
+  "sameAsElement":true
+ },
+ {
+  "hid":14,
   "sid":"architecture:45",
   "esid":"architecture:45",
-  "parent":6,
+  "parent":7,
   "children":[
   ],
   "name":"pygame",
@@ -219,7 +365,7 @@
   "sameAsElement":true
  },
  {
-  "hid":10,
+  "hid":15,
   "sid":"architecture:33",
   "esid":"architecture:33",
   "parent":1,
@@ -235,6 +381,27 @@
   "elements":[
    ":34",
    ":35"
+  ],
+  "sameAsElement":true
+ },
+ {
+  "hid":16,
+  "sid":"architecture:63",
+  "esid":"architecture:63",
+  "parent":1,
+  "children":[
+  ],
+  "name":"RightWheelEncoder",
+  "fullname":"architecture/RightWheelEncoder",
+  "label":"RightWheelEncoder",
+  "icon":"architecture2",
+  "svg":"support/slwebview_files/architecture_63_d.svg",
+  "thumbnail":"support/slwebview_files/architecture_63_d.png",
+  "backingUrl":"support/slwebview_files/architecture_63_d.json",
+  "elements":[
+   ":66",
+   ":64",
+   ":65"
   ],
   "sameAsElement":true
  }

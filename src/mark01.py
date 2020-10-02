@@ -1,19 +1,19 @@
 '''
-    Mark 01 - Driving the DC motors with PS4 controller in arcade mode
+    Mark 01 - Reading wheel speeds
     
-    Now you can control the robot in tank or arcade mode. Use the touch pad
+    Last update: Added wheel enconders to read the wheel speeds
+
+    The robot can be controled in tank or arcade mode. Use the touch pad
     button to switch between.
-    
 '''
+import time
 import pygame
+import RPi.GPIO as GPIO
 from adafruit_motorkit import MotorKit
-from gusbots import joystick
+from gusbots import joystick, encoder, speedEstimator
 
 # Initialize Motor HAT library
 kit = MotorKit()
-
-# Initialize pygame (used to read the joystick)
-pygame.init()
 
 # Show available joysticks in the system
 # In case there are more than 1 joystick connected. Check what
@@ -24,29 +24,53 @@ joystick.showAvailable()
 # and index 0 for the jostick.
 joy = joystick.create(joystickIndex=0, mode=joystick.ARCADE_MODE)
 
-# Global variables
-done = False            # when True, program will end
-useJoystick = 0         # select what joystick index to use
-
 # Used to manage how fast the main loop runs
 clock = pygame.time.Clock()
 
+# Initialize the encoder. Both have 40 ticks per resolution.
+left_wheel_encoder = encoder.encoder(5, 40)
+right_wheel_encoder = encoder.encoder(12, 40)
+
+# Initialize the speed estimator
+wheel_radius = 0.030988
+wheel_base = 0.141478
+speed = speedEstimator.speedEstimator(left_wheel_encoder, right_wheel_encoder, wheel_radius, wheel_base)
 
 # Main program loop
 ###################
-while not done:
-    left, right = joy.tick()
-             
-    kit.motor1.throttle = left
-    kit.motor4.throttle = right
-    
-    # Print some info always in the same line
-    print("\r", "Mode", joy.mode, "Left Motor (1)", '{:02.2f}'.format(left), "Right Motor (4)", '{:02.2f}'.format(right),"  ", end='')
-    
-    # Limit to 20 frames per second.
-    clock.tick(20)
+try:
+    start_time = time.time_ns()
+    while True:
+        left, right = joy.tick()
 
-# Close the window and quit.
-# If you forget this line, the program will 'hang'
-# on exit if running from IDLE.
+        kit.motor1.throttle = left
+        kit.motor4.throttle = right
+
+        # Calculate how many ns passed since last read
+        t = time.time_ns()
+        dt = t - start_time
+        start_time = t
+
+        # The encoder can not know the direction of the motor, so we are
+        # going to use the motor commands to know what direction is turning
+        dir_left = 1 if left >=0 else -1
+        dir_right = 1 if right >=0  else -1
+
+        # Get wheel speeds (call every loop - dt can not be big)
+        left_wheel_speed, right_wheel_speed = speed.wheelSpeed(dt, dir_left, dir_right)
+        robot_v, robot_w = speed.robotSpeed(left_wheel_speed, right_wheel_speed)
+
+        # Print some info always in the same line
+        print('Delta time', '{:05.1f}'.format(dt/1000000), 'Left:', '{:06.2f}'.format(left_wheel_speed), 'rpm Right:', '{:06.2f}'.format(right_wheel_speed), 'rpm Robot: v', '{:06.2f}'.format(robot_v*100), 'cm/s, w', '{:06.2f}'.format(robot_w*57.2958), 'deg/s')
+        
+        # Limit to 10 frames per second. (100ms loop)
+        clock.tick(10)
+except KeyboardInterrupt:
+    # Press Ctrl+C to exit the application
+    pass
+
+# Existing application (clean up)
+kit.motor1.throttle = 0
+kit.motor4.throttle = 0
+GPIO.cleanup()
 pygame.quit()

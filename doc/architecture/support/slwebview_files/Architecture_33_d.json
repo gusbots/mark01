@@ -2,7 +2,7 @@
  {
   "sid":"architecture:34",
   "className":"Simulink.Outport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"DCMotor1",
   "label":"DCMotor1",
   "parent":"architecture:33",
@@ -82,7 +82,7 @@
  {
   "sid":"architecture:35",
   "className":"Simulink.Outport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"DCMotor2",
   "label":"DCMotor2",
   "parent":"architecture:33",

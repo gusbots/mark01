@@ -29,3 +29,7 @@ And this project will be followed by a sequence of YouTube videos.
 ## Part 1 - TT Motors + Raspberry PI + PS4 Controller
 
 https://youtu.be/60l3N4I0JmI
+
+## Part 2 - PS4 Controller in Arcade Mode
+
+https://youtu.be/b3nBBbnJsqw

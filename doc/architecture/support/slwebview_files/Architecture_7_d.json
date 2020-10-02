@@ -2,7 +2,7 @@
  {
   "sid":"architecture:9",
   "className":"Simulink.Outport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"6V",
   "label":"6V",
   "parent":"architecture:7",
@@ -82,7 +82,7 @@
  {
   "sid":"architecture:10",
   "className":"Simulink.Outport",
-  "icon":"architecture4",
+  "icon":"architecture3",
   "name":"Ground",
   "label":"Ground",
   "parent":"architecture:7",
