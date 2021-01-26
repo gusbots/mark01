@@ -49,3 +49,10 @@ class speedEstimator():
         w = self.R/self.L * (right_rad_s - left_rad_s)
 
         return v, w
+
+def uni_to_diff(v,w, el, er, L):
+
+    vel_r = (2 * v + w * L)/(2 * er.radius);
+    vel_l = (2 * v - w * L)/(2 * el.radius);
+    
+    return vel_l, vel_r

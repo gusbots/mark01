@@ -1,5 +1,15 @@
 import pygame
 
+'''
+PS4 Controller MAP
+
+Buttons:
+    0 - Square
+    1 - X
+    2 - Circle
+    3 - Triangle
+    4 - L1
+'''
 # Initialize pygame (used to read the joystick)
 pygame.init()
 
@@ -26,6 +36,10 @@ class create:
         self.R2NeverPressed = True
         self.L2NeverPressed = True
         self.switchModePressed = False
+        self.autonomousModePressed = False
+        
+        self.autonomous = 0
+        self.resetPose = False
 
 
     def tankMode(self):
@@ -132,6 +146,18 @@ class create:
                 self.switchModePressed = True
             if i == 13 and button == 0 and self.switchModePressed == True:
                 self.switchModePressed = False
+            
+            # Button 0 (square) is to reset the pose of the robot (x, y, theta) values
+            if i == 0:
+                self.resetPose = button
+            
+            # Button 1 (x) is to go on/off from autonomous mode
+            if i == 1 and button == 1 and self.autonomousModePressed == False:
+                self.autonomous = 1 - self.autonomous
+                self.autonomousModePressed = True
+            if i == 1 and button == 0 and self.autonomousModePressed == True:
+                self.autonomousModePressed = False
+                
 
 
     def tick(self):

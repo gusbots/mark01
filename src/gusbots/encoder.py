@@ -1,17 +1,18 @@
-import RPi.GPIO as GPIO
+from gusbots.sensorInterruption import SensorInterruption
 
 class encoder():
-    def __init__(self, pin, ticks_p_resol):
+    def __init__(self, pin, ticks_p_revol, radius):
         self.counter = 0
-        self.ticks_p_resol = ticks_p_resol
+        self.ticks_p_revol = ticks_p_revol
+        self.radius = radius
+        
+        self.int = SensorInterruption(pin, self.count)
 
-        # Setup GPIO for both edge detections
-        GPIO.setmode(GPIO.BCM)
-        GPIO.setup(pin, GPIO.IN)
-        GPIO.add_event_detect(pin, GPIO.BOTH, callback=self.count)
-
-    def count(self, pin):
+    def count(self, value):
         '''
             Callback function for GPIO interruption
         '''
         self.counter += 1
+    
+    def reset(self):
+        self.counter = 0

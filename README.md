@@ -33,3 +33,6 @@ https://youtu.be/60l3N4I0JmI
 ## Part 2 - PS4 Controller in Arcade Mode
 
 https://youtu.be/b3nBBbnJsqw
+
+## Part 3 - Wheel Encoders
+https://youtu.be/ktZTN5aUYPY

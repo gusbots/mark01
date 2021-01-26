@@ -7,10 +7,11 @@
     button to switch between.
 '''
 import time
+import math
 import pygame
 import RPi.GPIO as GPIO
 from adafruit_motorkit import MotorKit
-from gusbots import joystick, encoder, speedEstimator
+from gusbots import joystick, encoder, localization, stateControl
 
 # Initialize Motor HAT library
 kit = MotorKit()
@@ -27,14 +28,23 @@ joy = joystick.create(joystickIndex=0, mode=joystick.ARCADE_MODE)
 # Used to manage how fast the main loop runs
 clock = pygame.time.Clock()
 
-# Initialize the encoder. Both have 40 ticks per resolution.
-left_wheel_encoder = encoder.encoder(5, 40)
-right_wheel_encoder = encoder.encoder(12, 40)
+# Initialize localization
+wheel_radius = 0.0335
+wheel_base = 0.147
 
-# Initialize the speed estimator
-wheel_radius = 0.030988
-wheel_base = 0.141478
-speed = speedEstimator.speedEstimator(left_wheel_encoder, right_wheel_encoder, wheel_radius, wheel_base)
+# Initialize the encoder. Both have 40 ticks per resolution.
+left_wheel_encoder = encoder.encoder(5, 40, wheel_radius)
+right_wheel_encoder = encoder.encoder(12, 40, wheel_radius)
+
+odo = localization.odometry(left_wheel_encoder, right_wheel_encoder, wheel_base)
+stControl = stateControl.stateControl()
+
+last_left_dir = 1
+last_right_dir = 1
+
+x = 0
+y = 0
+theta = 0
 
 # Main program loop
 ###################
@@ -42,34 +52,67 @@ try:
     start_time = time.time_ns()
     while True:
         left, right = joy.tick()
-
-        kit.motor1.throttle = left
-        kit.motor4.throttle = right
+        left = left if left >= 0 else 0
+        right = right if right >=0 else 0
 
         # Calculate how many ns passed since last read
         t = time.time_ns()
         dt = t - start_time
         start_time = t
 
+        # Run odometry to update robot location
+        odo.step(last_left_dir, last_right_dir)
+
+        # Check if pose needs to be reseted by the joystick
+        if (joy.resetPose == 1):
+           print("Pose reseted")
+           odo.resetPose()
+           left_wheel_encoder.reset()
+           right_wheel_encoder.reset()
+        
+        # Get pose values
+        x, y , theta = odo.getPose()
+        
+        # Set inputs for the state machine
+        stControl.input.joy_left = left
+        stControl.input.joy_right = right
+        stControl.input.autonomous = joy.autonomous
+        stControl.input.x = x
+        stControl.input.y = y
+        stControl.input.theta = theta
+        stControl.input.dt = dt
+        stControl.input.el = left_wheel_encoder
+        stControl.input.er = right_wheel_encoder
+        stControl.input.L = wheel_base
+        
+        # Run state machine
+        stControl.step()
+        
+        #print('test2', stateControl.State.output.left_motor, stateControl.State.output.right_motor)
+        # Update outputs
+        kit.motor1.throttle = stControl.output.left_motor
+        kit.motor4.throttle = stControl.output.right_motor
+        
         # The encoder can not know the direction of the motor, so we are
         # going to use the motor commands to know what direction is turning
-        dir_left = 1 if left >=0 else -1
-        dir_right = 1 if right >=0  else -1
+        last_left_dir = 1 if left >=0 else -1
+        last_right_dir = 1 if right >=0  else -1
 
-        # Get wheel speeds (call every loop - dt can not be big)
-        left_wheel_speed, right_wheel_speed = speed.wheelSpeed(dt, dir_left, dir_right)
-        robot_v, robot_w = speed.robotSpeed(left_wheel_speed, right_wheel_speed)
+        # Print some info
+        #print(stateControl.State.output.left_motor, stateControl.State.output.right_motor)
+        theta_d = (theta - (2 * math.pi * math.floor((theta + math.pi)/(2*math.pi))))
+        theta_d = theta * 180/math.pi
+        #print('Delta time', (dt/1000000), 'x', '{:02.2f}'.format(x), 'y', '{:02.2f}'.format(y), 'theta', '{:02.2f}'.format(theta_d))
+        print('L/R:', left_wheel_encoder.counter, right_wheel_encoder.counter,
+        'x:', '{:02.3f}'.format(x), 'y:', '{:02.3f}'.format(y), 'theta:', '{:02.2f}'.format(theta_d))
 
-        # Print some info always in the same line
-        print('Delta time', '{:05.1f}'.format(dt/1000000), 'Left:', '{:06.2f}'.format(left_wheel_speed), 'rpm Right:', '{:06.2f}'.format(right_wheel_speed), 'rpm Robot: v', '{:06.2f}'.format(robot_v*100), 'cm/s, w', '{:06.2f}'.format(robot_w*57.2958), 'deg/s')
-        
         # Limit to 10 frames per second. (100ms loop)
         clock.tick(10)
 except KeyboardInterrupt:
     # Press Ctrl+C to exit the application
     pass
 
-# Existing application (clean up)
+# Exiting application (clean up)
 kit.motor1.throttle = 0
 kit.motor4.throttle = 0
 GPIO.cleanup()
